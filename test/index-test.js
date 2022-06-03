@@ -2,6 +2,7 @@
 describe('shout(string)', function() {
   it('receives one argument and returns it in all caps', function() {
     expect(shout('hello')).toEqual('HELLO');
+    
   })
 })
 
@@ -18,8 +19,8 @@ describe('logShout(string)', function() {
     logShout('hello');
 
     expect(spy).toHaveBeenCalledWith('HELLO');
-
     console.log.restore();
+   
   })
 })
 
